@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: monospace;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  /* убрал скролл-бар */
+  width: 0;
+}
+
+header {
+  height: 961px;
+  width: auto;
+  background-color: black;
+}
+
+main {
+  height: 961px;
+  width: auto;
+  background-color: white;
+}
+
+.wrapper {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+#title {
+  padding-left: 730px;
+  width: 15ch;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  white-space: nowrap;
+  border-right: 4px solid rgb(255, 255, 255);
+  animation: print-text 3s steps(15), palka 0.75s step-start infinite;
+}
+
+#title a {
+  color: #6d4ec2;
+}
+
+#about {
+  width: auto;
+  font-size: 14px;
+  padding: 20% 20% 15% 20%;
+  color: white;
+}
+
+.navigation {
+  text-align: center;
+  color: white;
+}
+
+#navigation {
+  color: white;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+#photos {
+  padding-bottom: 50px;
+}
+
+.phot {
+  height: 250px;
+  width: 250px;
+}
+
+@keyframes palka {
+  0% {
+    border-color: rgb(255, 255, 255);
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes print-text {
+  from {
+    width: 0%;
+  }
+}
